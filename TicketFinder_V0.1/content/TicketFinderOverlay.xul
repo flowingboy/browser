@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://TicketFinder/skin/TicketFinder.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://TicketFinder/locale/TicketFinderOverlay.dtd">
+
+<overlay id="ticketfinder-overlay"
+	 xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://TicketFinder/content/browser.js"/>
+  <script type="application/x-javascript" src="chrome://TicketFinder/content/database.js"/>
+  <script type="application/x-javascript" src="chrome://TicketFinder/content/file.js"/>
+  <script type="application/x-javascript" src="chrome://TicketFinder/content/httpRequest.js"/>
+  <script type="application/x-javascript" src="chrome://TicketFinder/content/TicketFinder.js"/>
+  <script type="application/x-javascript">
+    TicketFinder.init(10000);
+  </script>
+  <!-- Extend Firefox Menu bar -->
+  <commandset id="MenuCommandSet">
+    <command id="OpenTicketFinder" oncommand=""/>
+    <command id="RecentTickets" oncommand=""/>
+    <command id="OpenConfigDlg" oncommand=""/>
+  </commandset>
+  <menupopup id="menu_ToolsPopup">
+    <menu id="menu_ticketfinder" class="" image="" label="TicketFinder">
+      <menupopup id="">
+	<menuitem label="Open TicketFinder" command="OpenTicketFinder"/>
+	<menuitem label="Recent Tickets List" command="RecentTickets"/>
+	<menuseparator/>
+	<menuitem label="Configure..." command="OpenConfigDlg"/>
+      </menupopup>
+    </menu>
+  </menupopup>
+  <!--  Extend Firefox status bar -->
+  <statusbar id="status-bar">
+    <statusbarpanel id="tfStatusBar" context="tfStatusContextMenu"
+  		    onmousedown="TicketFinder.toggleStatus();">
+      <image id="tfStatusIcon" tooltiptext="TicketFinder is Runing"/>
+      <label id="tfStatusText"/>
+    </statusbarpanel>
+    <menupopup id="menu_tfStatusBar">
+      <menuitem label="slldd" oncommand=""/>
+      <menuseparator/>
+      <menuitem label="Suspend TicketFinder" oncommand=""/>
+    </menupopup>
+  </statusbar>
+</overlay>

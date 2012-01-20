@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+ 
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://TicketFinder/skin/TicketFinder.css" type="text/css"?>
+ 
+<!DOCTYPE window SYSTEM "chrome://TicketFinder/locale/TicketFinder.dtd">
+
+<window id="TicketFinder" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<menubar id="tfMenuBar">
+    <menu id="config-menu" label="Configure" accesskey="">
+        <menupopup>
+            <menuitem id="config" label="Configuration..." oncommand=""/>
+        </menupopup>
+    </menu>
+    <menu id="about-menu" label="About" accesskey="">
+        <menupopup>
+            <menuitem id="about_me" label="About US" oncommand=""/>
+            <menuitem id="help" label="Get Help" oncommand=""/>
+        </menupopup>
+    </menu>
+</menubar>
+<toolbar id="toolbarid">
+    <toolbarbutton id="toolid" label="label" oncommand="{action}" image="image uri" tooltiptext="{tooltip}"/>
+</toolbar>
+  <tree id="ticketList" flex="1">
+    <treecols>
+      <treecol id="ticketNum" label="Ticket号" primary="true" flex="1"/>
+      <treecol id="ticketUrl" label="Ticket链接" flex="1"/>
+      <treecol id="startTime" label="出发时间" flex="1"/>
+      <treecol id="updateTime" label="更新时间" flex="1"/>
+      <treecol id="updateTime" label="手机号码" flex="1"/>
+    </treecols>
+    <treechildren/>
+  </tree>
+</window>

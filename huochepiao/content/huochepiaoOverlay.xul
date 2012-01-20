@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://huochepiao/skin/huochepiao.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://huochepiao/locale/huochepiao.dtd">
+
+<overlay id="huochepiao-overlay"
+	 xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  Extend Firefox status bar
+  <statusbar id="status-bar">
+    <statusbarpanel id="hcpStatusBar" context="hcpStatusContextMenu"
+  		    onmousedown="alert('user clicked on hcpStatusBar!');">
+      <image id="hcpStatusIcon" tooltiptext="hh"/>
+      <label id="hcpStatusText" onmousedown="ee"/>
+    </statusbarpanel>
+    <menupopup id="menu_ToolsPopup">
+      <menuitem label="slldd" oncommand=""/>
+      <menuseparator/>
+      <menuitem label="Suspend Huochepiao" oncommand=""/>
+    </menupopup>
+  </statusbar>
+</overlay>

@@ -1,0 +1,5 @@
+content huochepiao jar:chrome/huochepiao.jar!/content/
+locale	huochepiao	zh-CN		jar:chrome/huochepiao.jar!/locale/zh-CN/
+skin	huochepiao	classic/1.0	jar:chrome/huochepiao.jar!/skin/
+
+overlay chrome://browser/content/browser.xul chrome://huochepiao/content/huochepiaoOverlay.xul

@@ -1,0 +1,5 @@
+content TicketFinder jar:chrome/TicketFinder.jar!/content/
+locale	TicketFinder	zh-CN		jar:chrome/TicketFinder.jar!/locale/zh-CN/
+skin	TicketFinder	classic/1.0	jar:chrome/TicketFinder.jar!/skin/
+
+overlay chrome://browser/content/browser.xul chrome://TicketFinder/content/TicketFinderOverlay.xul

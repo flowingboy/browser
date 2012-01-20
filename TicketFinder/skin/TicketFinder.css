@@ -1,0 +1,12 @@
+/* TODO */
+#tfStatusIcon {
+   list-style-image: url(chrome://TicketFinder/skin/icons/ticket.png);
+}
+
+#tfStatusIcon[findTrainTicket="on"] {
+   list-style-image: url(chrome://TicketFinder/skin/icons/train.png);
+}
+
+#tfStatusIcon[findAeroPlaneTicket="on"] {
+   list-style-image: url(chrome://TicketFinder/skin/icons/aero.png);
+}

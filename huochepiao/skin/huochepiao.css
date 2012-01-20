@@ -1,0 +1,19 @@
+#hcpStatusIcon {
+    list-style-image: url(chrome://huochepiao/skin/icons/huochepiao.png);
+}
+
+#hcpStatusIcon[jsd="on"] {
+    list-style-image: url(chrome://huochepiao/skin/icons/huochepiao.png);
+}
+#hcpStatusIcon[net="on"] {
+    list-style-image: url(chrome://huochepiao/skin/icons/huochepiao.png);
+}
+#hcpStatusIcon[errors="on"] {
+    list-style-image: url(chrome://huochepiao/skin/icons/huochepiao.png);
+}
+#menu_toggleSuspendHuochepiao[suspended="suspending"] {
+        color: graytext;
+}
+#menu_toggleSuspendHuochepiao[suspended="resuming"] {
+        color: graytext;
+}
