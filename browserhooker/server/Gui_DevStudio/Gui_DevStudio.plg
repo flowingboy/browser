@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Gui_DevStudio - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Gui_DevStudio.res" /d "_DEBUG" /d "_AFXDLL" "E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\Gui_DevStudio.rc"" 
+Creating temporary file "C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP24.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\GuiLib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Gui_DevStudio.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\ChildFrm.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\DialUndo.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\Gui_DevStudio.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\Gui_DevStudioDoc.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\Gui_DevStudioView.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\GuiHelp.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\GuiOutPut.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\GuiServerExplorer.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\GuiSolExplorer.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\MainFrm.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\OutputWindow.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\SplashView.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\WorkingWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP24.tmp" 
+Creating temporary file "C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP25.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\GuiLib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Gui_DevStudio.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\projects\Scriptlance\BrowserHooker\server\Gui_DevStudio\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP25.tmp" 
+Creating temporary file "C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP26.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"..\..\bin/Gui_DevStudioD.pdb" /debug /machine:I386 /out:"..\..\bin/Gui_DevStudioD.exe" /pdbtype:sept /libpath:"..\..\bin" 
+.\Debug\ChildFrm.obj
+.\Debug\DialUndo.obj
+.\Debug\Gui_DevStudio.obj
+.\Debug\Gui_DevStudioDoc.obj
+.\Debug\Gui_DevStudioView.obj
+.\Debug\GuiHelp.obj
+.\Debug\GuiOutPut.obj
+.\Debug\GuiServerExplorer.obj
+.\Debug\GuiSolExplorer.obj
+.\Debug\MainFrm.obj
+.\Debug\OutputWindow.obj
+.\Debug\SplashView.obj
+.\Debug\StdAfx.obj
+.\Debug\WorkingWnd.obj
+.\Debug\Gui_DevStudio.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP26.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Microsoft (R) Windows (R) Resource Compiler Version 6.0.5724.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Compiling...
+StdAfx.cpp
+Automatically linking with GuiTk115d.dll
+Compiling...
+ChildFrm.cpp
+DialUndo.cpp
+Gui_DevStudio.cpp
+Gui_DevStudioDoc.cpp
+Gui_DevStudioView.cpp
+GuiHelp.cpp
+GuiOutPut.cpp
+GuiServerExplorer.cpp
+GuiSolExplorer.cpp
+MainFrm.cpp
+OutputWindow.cpp
+SplashView.cpp
+WorkingWnd.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Gui_DevStudioD.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,36 @@
+// WipeImg.idl : IDL source for WipeImg
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WipeImg.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(075E971A-4972-4D11-8410-B80C2DD20E6C),
+	dual,
+	nonextensible,
+	helpstring("IWipeImgBHO Interface"),
+	pointer_default(unique)
+]
+interface IWipeImgBHO : IDispatch{
+};
+[
+	uuid(7AB8C3B3-61EB-440D-B20C-18F3E628D7A5),
+	version(1.0),
+	helpstring("WipeImg 1.0 Type Library")
+]
+library WipeImgLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(65876936-1D66-40D6-B5B8-F331CA79E39C),
+		helpstring("WipeImgBHO Class")
+	]
+	coclass WipeImgBHO
+	{
+		[default] interface IWipeImgBHO;
+	};
+};

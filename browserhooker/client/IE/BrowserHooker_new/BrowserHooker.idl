@@ -1,0 +1,38 @@
+// BrowserHooker.idl : IDL source for BrowserHooker.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (BrowserHooker.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(4236760C-9DDF-4B64-90D7-1729E3AD56DC),
+		dual,
+		helpstring("IRedirector Interface"),
+		pointer_default(unique)
+	]
+	interface IRedirector : IDispatch
+	{
+	};
+
+[
+	uuid(68905ABF-DC52-4C6B-9216-B4D582552837),
+	version(1.0),
+	helpstring("BrowserHooker 1.0 Type Library")
+]
+library BROWSERHOOKERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(894FA370-FD14-4C2E-B28B-E3E119CA206B),
+		helpstring("Redirector Class")
+	]
+	coclass Redirector
+	{
+		[default] interface IRedirector;
+	};
+};

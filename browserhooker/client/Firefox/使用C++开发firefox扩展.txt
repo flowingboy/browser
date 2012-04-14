@@ -1,0 +1,1 @@
+https://developer.mozilla.org/en/How_to_build_a_binary_XPCOM_component_using_Visual_Studio

@@ -1,0 +1,36 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'WipeImg'
+		'WipeImg.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}
+HKLM
+{
+	NoRemove SOFTWARE
+	{
+		NoRemove Microsoft
+		{
+			NoRemove Windows
+			{
+				NoRemove CurrentVersion
+				{
+					NoRemove Explorer
+					{
+						NoRemove 'Browser Helper Objects'
+						{
+							ForceRemove '{65876936-1D66-40D6-B5B8-F331CA79E39C}' = s 'WipeImgBHO' 
+							{
+								val 'NoExplorer' = d '1'
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

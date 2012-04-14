@@ -1,0 +1,125 @@
+# Microsoft Developer Studio Generated Dependency File, included by BrowserHooker.mak
+
+.\BHNavigator.cpp : \
+	".\BHNavigator.h"\
+	".\BrowserHooker.h"\
+	
+
+.\BrowserHooker.cpp : \
+	".\BHNavigator.h"\
+	".\BrowserHooker.h"\
+	".\BrowserHookerDoc.h"\
+	".\BrowserHookerView.h"\
+	".\MainFrm.h"\
+	
+
+.\BrowserHooker.rc : \
+	".\res\BHSsytray.ico"\
+	".\res\bitmap1.bmp"\
+	".\res\bmp00001.bmp"\
+	".\res\bmp00003.bmp"\
+	".\res\BrowserHooker.ico"\
+	".\res\BrowserHooker.rc2"\
+	".\res\BrowserHookerDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\BrowserHookerDoc.cpp : \
+	".\BrowserHooker.h"\
+	".\BrowserHookerDoc.h"\
+	
+
+.\BrowserHookerView.cpp : \
+	".\BrowserHooker.h"\
+	".\BrowserHookerDoc.h"\
+	".\BrowserHookerView.h"\
+	
+
+.\MainFrm.cpp : \
+	".\BHNavigator.h"\
+	".\BrowserHooker.h"\
+	".\MainFrm.h"\
+	
+
+.\Socket.cpp : \
+	".\Socket.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\guilibinc\cbasetab.h"\
+	"..\guilibinc\coolmenu.h"\
+	"..\guilibinc\guibasetab.h"\
+	"..\guilibinc\guibutton.h"\
+	"..\guilibinc\guibuttontimer.h"\
+	"..\guilibinc\guicapoutbar.h"\
+	"..\guilibinc\guicheckbox.h"\
+	"..\guilibinc\guicolors.h"\
+	"..\guilibinc\guicomboboxext.h"\
+	"..\guilibinc\guicontainer.h"\
+	"..\guilibinc\guicontrolbar.h"\
+	"..\guilibinc\guidocbarexten.h"\
+	"..\guilibinc\guidocbarextenex.h"\
+	"..\guilibinc\guidockbar.h"\
+	"..\guilibinc\guidockcontext.h"\
+	"..\guilibinc\guidocktoolbar.h"\
+	"..\guilibinc\guidocktoolbarex.h"\
+	"..\guilibinc\guidocspecial.h"\
+	"..\guilibinc\guidrawlayer.h"\
+	"..\guilibinc\guidropdownedit.h"\
+	"..\guilibinc\guiedit.h"\
+	"..\guilibinc\guifdir.h"\
+	"..\guilibinc\guifile.h"\
+	"..\guilibinc\guifolder.h"\
+	"..\guilibinc\guifolderflat.h"\
+	"..\guilibinc\guiframewnd.h"\
+	"..\guilibinc\guigroupbox.h"\
+	"..\guilibinc\guiheaderctrl.h"\
+	"..\guilibinc\guiimagelinkbutton.h"\
+	"..\guilibinc\guilabelbutton.h"\
+	"..\guilibinc\guilib.h"\
+	"..\guilibinc\guilinkbutton.h"\
+	"..\guilibinc\guilistedit.h"\
+	"..\guilibinc\guimdiframe.h"\
+	"..\guilibinc\guimditabbed.h"\
+	"..\guilibinc\guiminiframe.h"\
+	"..\guilibinc\guiminiframewnd.h"\
+	"..\guilibinc\guiminisplitter.h"\
+	"..\guilibinc\guiminitool.h"\
+	"..\guilibinc\guinormalbutton.h"\
+	"..\guilibinc\guiofficebar.h"\
+	"..\guilibinc\guioutlook.h"\
+	"..\guilibinc\guioutlookview.h"\
+	"..\guilibinc\guipanelaccess.h"\
+	"..\guilibinc\guipowerpointview.h"\
+	"..\guilibinc\guiradiobutton.h"\
+	"..\guilibinc\guisliderctrl.h"\
+	"..\guilibinc\guisplitter.h"\
+	"..\guilibinc\guisplitterwnd.h"\
+	"..\guilibinc\guistatusbar.h"\
+	"..\guilibinc\guisystray.h"\
+	"..\guilibinc\guitabbed.h"\
+	"..\guilibinc\guitabpowerpoint.h"\
+	"..\guilibinc\guitabwnd.h"\
+	"..\guilibinc\guitoolbarwnd.h"\
+	"..\guilibinc\guitoolbutton.h"\
+	"..\guilibinc\guiview.h"\
+	"..\guilibinc\guiviewworktab.h"\
+	"..\guilibinc\guivisiofolder.h"\
+	"..\guilibinc\guiworkpanel.h"\
+	"..\guilibinc\guiworktab.h"\
+	"..\guilibinc\menubar.h"\
+	"..\guilibinc\newmenu.h"\
+	"..\guilibinc\stdafx.h"\
+	"..\guilibinc\subclass.h"\
+	"..\guilibinc\visualstylesxp.h"\
+	".\StdAfx.h"\
+	"d:\program files\microsoft sdks\windows\v6.0\include\specstrings.h"\
+	"d:\program files\microsoft sdks\windows\v6.0\include\specstrings_adt.h"\
+	"d:\program files\microsoft sdks\windows\v6.0\include\specstrings_strict.h"\
+	"d:\program files\microsoft sdks\windows\v6.0\include\uxtheme.h"\
+	"d:\program files\microsoft sdks\windows\v6.0\include\vsstyle.h"\
+	"d:\program files\microsoft sdks\windows\v6.0\include\vssym32.h"\
+	"d:\program files\microsoft sdks\windows\v6.0\vc\include\sal.h"\
+	"d:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	"d:\program files\microsoft visual studio\vc98\mfc\src\afximpl.h"\
+	

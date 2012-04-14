@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay SYSTEM "chrome://BrowserHooker/locale/BrowserHooker.dtd">
+
+<overlay id="BrowserHooker-Overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://BrowserHooker/content/BrowserHookerOverlay.js"></script>
+<script type="application/x-javascript">
+  window.addEventListener("load", function(){BrowserHookerOverlay.init();}, false);
+  window.addEventListener("unload", function(){BrowserHookerOverlay.uninit();}, false);
+</script>
+</overlay>

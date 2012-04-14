@@ -1,0 +1,12 @@
+<Script Language="VBScript">
+	On Error Resume Next
+	Set wordapp=CreateObject("Word.Application")
+	if err<>0 then
+		MsgBox("没有安装 MS WORD")
+	else
+		wordapp.visible = true
+		wordapp.Documents.Add "",false, 0
+		wordapp.Selection.TypeText window.dialogArguments
+	end if
+	window.close
+</Script>

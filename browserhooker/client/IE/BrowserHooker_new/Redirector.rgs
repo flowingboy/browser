@@ -1,0 +1,44 @@
+HKCR
+{
+	BrowserHooker.Redirector.1 = s 'Redirector Class'
+	{
+		CLSID = s '{894FA370-FD14-4C2E-B28B-E3E119CA206B}'
+	}
+	BrowserHooker.Redirector = s 'Redirector Class'
+	{
+		CLSID = s '{894FA370-FD14-4C2E-B28B-E3E119CA206B}'
+		CurVer = s 'BrowserHooker.Redirector.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {894FA370-FD14-4C2E-B28B-E3E119CA206B} = s 'Redirector Class'
+		{
+			ProgID = s 'BrowserHooker.Redirector.1'
+			VersionIndependentProgID = s 'BrowserHooker.Redirector'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{68905ABF-DC52-4C6B-9216-B4D582552837}'
+		}
+	}
+}
+
+HKLM {
+  NoRemove SOFTWARE {
+    NoRemove Microsoft {   
+      NoRemove Windows {
+        NoRemove CurrentVersion {
+          NoRemove Explorer {
+            NoRemove 'Browser Helper Objects' {
+              ForceRemove '{894FA370-FD14-4C2E-B28B-E3E119CA206B}' = s 'BrowserHookerBHO' {
+                val 'NoExplorer' = d '1'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

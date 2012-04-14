@@ -1,0 +1,320 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BHMonitor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BHMonitor.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SEETING_DIALOG DIALOG DISCARDABLE  0, 0, 225, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting Dialog"
+FONT 8, "Arial"
+BEGIN
+    PUSHBUTTON      "Save",IDC_BT_SAVE_SEETING,162,205,50,14
+    LTEXT           "Port  :",IDC_STATIC,14,19,20,8
+    LTEXT           "Maximum nr of connections :",IDC_STATIC,14,30,95,8
+    LTEXT           "Number of I/O workers  :",IDC_STATIC,14,41,79,8
+    LTEXT           "Number of logical workers  :",IDC_STATIC,14,53,92,8
+    LTEXT           "Max Number of unused \nBuffers  (0=infinte number)  :",
+                    IDC_STATIC,14,65,98,18
+    LTEXT           "Max Number of unused Clients \n(0=infinte number)  :",
+                    IDC_STATIC,13,85,105,17
+    LTEXT           "Number of pendling read loop  :",IDC_STATIC,13,104,103,
+                    8
+    GROUPBOX        "Package ordering",IDC_STATIC,16,134,196,66
+    CONTROL         "Make sending packages ordered. ",IDC_CK_SEND_ORDERED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,145,126,10
+    CONTROL         "Make received packages ordered (TRUE if the sever \nuse several pendling reads .  ",
+                    IDC_CK_RECV_ORDERED,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,27,155,183,17
+    LTEXT           "Uncheck to increase the performance if you know that the order of the packages is not important. ",
+                    IDC_STATIC,29,173,173,18
+    EDITTEXT        IDC_PORT,133,14,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_CONNECTION,133,27,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM_IO_WORKERS,133,40,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM_LG_WORKERS,133,53,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_UNSAFE_BUFFER,133,68,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_UNUSED_CLIENTS,133,85,77,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM_PENDING_RLOOP,133,102,77,12,ES_AUTOHSCROLL
+END
+
+IDD_HKRULE_SETTING DIALOG DISCARDABLE  0, 0, 291, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting Hooking Rules"
+FONT 10, "Arial"
+BEGIN
+    CONTROL         "List1",IDC_LIST_HOOKING_RULES,"SysListView32",
+                    LVS_REPORT | LVS_EDITLABELS | WS_BORDER | WS_TABSTOP,7,7,
+                    277,136
+    PUSHBUTTON      "Save Hooking Rules",IDC_BT_SAVE_HKRULES,210,149,74,14
+    PUSHBUTTON      "Add Hooking Rules",IDC_BT_ADD_HKRULES,7,149,73,14
+    PUSHBUTTON      "Delete Hooking Rules",IDC_BT_DEL_HKRULES,84,149,80,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SEETING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_HKRULE_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HEADER              BITMAP  DISCARDABLE     "res\\header.bmp"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About BHMonitor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "BHMonitor Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_BHMONITOR_DIALOG DIALOGEX 0, 0, 490, 235
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BHMonitor"
+FONT 8, "Arial"
+BEGIN
+    PUSHBUTTON      "Setting Hooking Rules...",IDC_BT_HKRULE_SETTING,21,28,
+                    83,14
+    PUSHBUTTON      "Communication Setting",IDC_BT_COMMUNICATION_SETTING,21,
+                    48,83,14
+    PUSHBUTTON      "Start Monitor",IDC_BT_START_SERVER,21,88,84,14
+    PUSHBUTTON      "Stop Monitor",IDC_BT_STOP_SERVER,21,108,84,14
+    PUSHBUTTON      "Save configuration",IDC_BT_EXPORT_CLIENT,21,68,84,14
+    DEFPUSHBUTTON   "Exit",IDOK,423,206,50,14
+    GROUPBOX        "BHMonitor Console",IDC_STATIC,7,7,476,221
+    CONTROL         "List1",IDC_LIST_CTRL_CLIENTS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,124,18,349,110
+    CONTROL         "",IDC_CONSOLE_LOGS,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_OEMCONVERT | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,16,137,
+                    457,64
+    GROUPBOX        "Control Panel",IDC_STATIC,15,16,98,113
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "BHMonitor MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "BHMonitor\0"
+            VALUE "LegalCopyright", "Copyright (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BHMonitor.EXE\0"
+            VALUE "ProductName", "BHMonitor Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BHMONITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About BHMonitor..."
+    IDS_EXITHKRULES_PROMPT  "Do you want to close this dialog\nwithout save the change?"
+    IDS_EXIT_PROGRAM        "Do you really want to exit the program?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\BHMonitor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

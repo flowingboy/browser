@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: IOCPClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x41d /fo"Debug/IOCPClient.res" /d "_DEBUG" /d "_AFXDLL" "E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPClient.rc"" 
+Creating temporary file "C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP128.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/IOCPClient.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\HistoryEdit.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPBuffer.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPClient.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPClientDlg.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPS.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPSettingsDlg.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\MyIOCP.cpp"
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\MyListCtrl.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP128.tmp" 
+Creating temporary file "C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP129.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/IOCPClient.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP129.tmp" 
+Creating temporary file "C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP12A.tmp" with contents
+[
+Mswsock.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/IOCPClient.pdb" /debug /machine:I386 /out:"Debug/IOCPClient.exe" /pdbtype:sept 
+".\Debug\HistoryEdit.obj"
+".\Debug\IOCPBuffer.obj"
+".\Debug\IOCPClient.obj"
+".\Debug\IOCPClientDlg.obj"
+".\Debug\IOCPS.obj"
+".\Debug\IOCPSettingsDlg.obj"
+".\Debug\MyIOCP.obj"
+".\Debug\MyListCtrl.obj"
+".\Debug\StdAfx.obj"
+".\Debug\IOCPClient.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP12A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+HistoryEdit.cpp
+IOCPBuffer.cpp
+E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPBuffer.cpp(621) : warning C4018: '<' : signed/unsigned mismatch
+IOCPClient.cpp
+IOCPClientDlg.cpp
+IOCPS.cpp
+E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\IOCPS.cpp(3514) : warning C4018: '>=' : signed/unsigned mismatch
+IOCPSettingsDlg.cpp
+MyIOCP.cpp
+MyListCtrl.cpp
+E:\projects\Scriptlance\BrowserHooker\server\IOCP-SRC\IOCP-SRC\IOCP\IOCPClient\MyListCtrl.cpp(212) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP12C.tmp" with contents
+[
+/nologo /o"Debug/IOCPClient.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\HistoryEdit.sbr"
+".\Debug\IOCPBuffer.sbr"
+".\Debug\IOCPClient.sbr"
+".\Debug\IOCPClientDlg.sbr"
+".\Debug\IOCPS.sbr"
+".\Debug\IOCPSettingsDlg.sbr"
+".\Debug\MyIOCP.sbr"
+".\Debug\MyListCtrl.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ZENDY~1.ZHA\LOCALS~1\Temp\RSP12C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+IOCPClient.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

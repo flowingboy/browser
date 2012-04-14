@@ -1,0 +1,5 @@
+content BrowserHooker jar:chrome/BrowserHooker.jar!/content/
+locale	BrowserHooker	en-US		jar:chrome/BrowserHooker.jar!/locale/en-US/
+skin	BrowserHooker	classic/1.0	jar:chrome/BrowserHooker.jar!/skin/
+
+overlay chrome://browser/content/browser.xul chrome://BrowserHooker/content/BrowserHookerOverlay.xul

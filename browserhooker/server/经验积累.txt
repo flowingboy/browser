@@ -1,0 +1,1 @@
+1. VC++6.0 默认是_MBCS方式，就是multi-byte的方式，但是这种方式其实是ascii的

@@ -1,0 +1,10 @@
+1. 无法区分哪些是当前tab/extension发起的请求，那些是其他tab/extension发起的请求
+
+2. iframe的情况如何处理，如何标识一个请求是来自主窗口还是来自frame/iframe
+   fixed, 添加判断是否请求是来自iframe: win!=win.parent
+
+3. 重定向问题，如通过js的重定向或者是通过meta标签的重定向，或者是通过http header的指示完成的重定向
+
+4. 获取目标url的内容并feed给源窗口的问题
+
+5. 如何与服务器端通信的问题

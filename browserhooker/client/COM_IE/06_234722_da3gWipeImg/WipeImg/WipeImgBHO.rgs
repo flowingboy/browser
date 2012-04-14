@@ -1,0 +1,27 @@
+HKCR
+{
+	WipeImg.WipeImgBHO.1 = s 'WipeImgBHO Class'
+	{
+		CLSID = s '{65876936-1D66-40D6-B5B8-F331CA79E39C}'
+	}
+	WipeImg.WipeImgBHO = s 'WipeImgBHO Class'
+	{
+		CLSID = s '{65876936-1D66-40D6-B5B8-F331CA79E39C}'
+		CurVer = s 'WipeImg.WipeImgBHO.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {65876936-1D66-40D6-B5B8-F331CA79E39C} = s 'WipeImgBHO Class'
+		{
+			ProgID = s 'WipeImg.WipeImgBHO.1'
+			VersionIndependentProgID = s 'WipeImg.WipeImgBHO'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{7AB8C3B3-61EB-440D-B20C-18F3E628D7A5}'
+		}
+	}
+}
